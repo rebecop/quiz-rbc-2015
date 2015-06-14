@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8"><title>Preguntas</title>
-		<link rel="stylesheet" href='/stylesheets/style.css' />
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link	rel='stylesheet'
+				type='text/css'
+				media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+				href='/stylesheets/wide.css' />
+		<link	rel='stylesheet'
+				type='text/css'
+				media='only screen and (max-width: 480px)'
+				href='/stylesheets/smartphone.css' />				
 	</head>
 	<body>
 		<div id="page-wrap">
@@ -15,11 +23,13 @@
 			</nav>
 			
 			<section class="main" id="s1">
-				<%- body %>
+				<div>
+					<%- body %>
+				</div>
 			</section>
 			
 			<footer class="main" id="f1">
-				<a href="http://es.wikipedia.org/wiki/Quiz">�Que es un Quiz?</a>
+				<a href="http://es.wikipedia.org/wiki/Quiz">¿Qué es un Quiz?</a>
 			</footer>
 		</div>
 	</body>
